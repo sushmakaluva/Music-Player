@@ -1,0 +1,94 @@
+body {
+    background-color: black;
+}
+
+#instrument {
+    position: absolute;
+    margin: auto;
+    top: 0; bottom:0; left: 0; right: 0;
+    height: 100px;
+    width: 800px;
+    padding-right: 10px;
+    padding-top:15px ;
+}
+
+.box {
+    height: 100px;
+    width: 90px;
+    margin-left: 5px;
+    margin-top: 10px;
+    float: left;
+}
+
+#c {
+    background-color: red;
+    border: 5px solid red;
+}
+
+#c:hover {
+    cursor: pointer;
+    background-color: darkred;
+}
+
+#d {
+    background-color:orange;
+    border: 5px solid orange;
+}
+
+#d:hover {
+    cursor: pointer;
+    background-color: lightsalmon;
+}
+
+
+#e {
+    background-color:yellow;
+    border: 5px solid yellow;
+}
+
+#e:hover {
+    cursor: pointer;
+    background-color:rgb(255, 255, 0);
+}
+
+
+#f {
+    background-color: green;
+    border: 5px solid green;
+}
+
+#f:hover {
+    cursor: pointer;
+    background-color: darkgreen;
+}
+
+#g {
+    background-color: blue;
+    border: 5px solid blue;
+}
+
+#g:hover {
+    cursor: pointer;
+    background-color: darkblue;
+}
+
+
+#a {
+    background-color:purple;
+    border: 5px solid purple;
+}
+  
+#a:hover {
+    cursor: pointer;
+    background-color: darkmagenta;
+}
+
+#b {
+    background-color: pink;
+    border: 5px solid pink;
+}
+
+#b:hover {
+    cursor: pointer;
+    background-color: darkorchid;
+}

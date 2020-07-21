@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+   <audio id="caudio">
+   <source src="music_notes/c_note.mp3" type="audio/mp3"> </source>
+   <source src="music_notes/c_note.ogg" type="audio/ogg"> </source>
+   <source src="music_notes/c_note.wav" type="audio/wav"> </source>
+  </audio>
+
+  <audio id="daudio">
+    <source src="music_notes/d_note.mp3" type="audio/mp3"> </source>
+    <source src="music_notes/d_note.ogg" type="audio/ogg"> </source>
+    <source src="music_notes/d_note.wav" type="audio/wav"> </source>
+   </audio>
+   
+   <audio id="eaudio">
+    <source src="music_notes/e_note.mp3" type="audio/mp3"> </source>
+    <source src="music_notes/e_note.ogg" type="audio/ogg"> </source>
+    <source src="music_notes/e_note.wav" type="audio/wav"> </source>
+   </audio>
+
+   <audio id=faudio> 
+    <source src="music_notes/f_note.mp3" type="audio/mp3"> </source>
+    <source src="music_notes/f_note.ogg" type="audio/ogg"> </source>
+    <source src="music_notes/f_note.wav" type="audio/wav"> </source>
+   </audio>
+
+   <audio id="gaudio">
+    <source src="music_notes/g_note.mp3" type="audio/mp3"> </source>
+    <source src="music_notes/g_note.ogg" type="audio/ogg"> </source>
+    <source src="music_notes/g_note.wav" type="audio/wav"> </source>
+   </audio>
+
+   <audio id="aaudio">
+    <source src="music_notes/a_note.mp3" type="audio/mp3"> </source>
+    <source src="music_notes/a_note.ogg" type="audio/ogg"> </source>
+    <source src="music_notes/a_note.wav" type="audio/wav"> </source>
+   </audio>
+
+   <audio id="baudio">
+    <source src="music_notes/b_note.mp3" type="audio/mp3"> </source>
+    <source src="music_notes/b_note.ogg" type="audio/ogg"> </source>
+    <source src="music_notes/b_note.wav" type="audio/wav"> </source>
+   </audio>
+  
+
+   <div id="instrument" >
+       <div id="c" class="box" onclick="playMusic('caudio')"> </div>
+       <div id="d" class="box" onclick="playMusic('daudio')"> </div>
+       <div id="e" class="box" onclick="playMusic('eaudio')"> </div>
+       <div id="f" class="box" onclick="playMusic('faudio')"> </div>
+       <div id="g" class="box" onclick="playMusic('gaudio')"> </div>
+       <div id="a" class="box" onclick="playMusic('aaudio')"> </div>
+       <div id="b" class="box" onclick="playMusic('baudio')"> </div>
+
+   </div>
+    
+   <script>
+        function playMusic(element) {
+            var cNote = document.getElementById(element);
+            cNote.currentTime = 0;
+            cNote.play();
+        }
+    </script>
+
+</body>
+</html>
